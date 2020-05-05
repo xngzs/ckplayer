@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head><script src="http://www.ckplayer.com/Public/ckplayer/x1/ckplayer.js"></script>
+
+</head>
+
+<div id="video"></div>
+
+<script>
+
+var videoObject = {
+		container: '#video',//“#”代表容器的ID，“.”或“”代表容器的class
+		variable: 'player',//该属性必需设置，值等于下面的new chplayer()的对象
+		flashplayer:false,//如果强制使用flashplayer则设置成true
+		video:'https://gss3.baidu.com/6LZ0ej3k1Qd3ote6lo7D0j9wehsv/tieba-smallvideo/19649098_20cd1e01230174da810ad3c0fef1650d.mp4'//视频地址
+	};
+	var player=new ckplayer(videoObject);
+</script>
+
+</html>
