@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head><script src="ckplayer/ckplayer.js"></script>
-
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
-
-<div id="video"></div>
-
-<script>
-var video=['http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4->video/mp4'];
+<body>
+<div id="a1"></div>
+<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	var flashvars={
+		p:0,
+		e:1,
+		i:''
+		};
+	var video=['https://gss3.baidu.com/6LZ0ej3k1Qd3ote6lo7D0j9wehsv/tieba-smallvideo/19649098_20cd1e01230174da810ad3c0fef1650d.mp4->video/mp4'];
 	var support=['all'];
-	CKobject.embedHTML5('video','ckplayer_video',,,video,,support);
+	CKobject.embedHTML5('a1','ckplayer_a1',100%,100%,video,flashvars,support);
 </script>
-
+</body>
 </html>
